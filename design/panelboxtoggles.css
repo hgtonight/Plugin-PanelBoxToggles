@@ -1,13 +1,17 @@
-#Panel .Box.PanelBoxToggle.Collapsed {
+#Panel .Box.Collapsed:not(.Group) {
 	padding-right: 20px;
 	background-image: url('arrow.png');
 	background-repeat: no-repeat;
 	background-position: 95% 9px;
 }
 
-#Panel .Box.PanelBoxToggle {
+#Panel .Box:not(.Group) {
 	padding-right: 20px;
 	background-image: url('arrow-down.png');
 	background-repeat: no-repeat;
 	background-position: 95% 9px;
+}
+
+.js #Panel .Box:not(.Group) h4 ~ * {
+    display: none;
 }
